@@ -97,7 +97,6 @@ public class DrawingSurface extends PApplet {
 			spawnNewMario();
 	}
 
-
 	public void keyPressed() {
 		keys.add(keyCode);
 	}
