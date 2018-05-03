@@ -30,7 +30,11 @@ public class Mario extends Sprite {
 			}
 		}
 
-		
+		for (Shape s: obstacles) {
+			if (s.intersects(x, y, MARIO_WIDTH, MARIO_HEIGHT))
+				return;
+		}
+		super.moveByAmount(0,10);
 		// FALL (and stop when a platform is hit)
 		
 	}
